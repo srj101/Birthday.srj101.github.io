@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section-center">
+       <div>
+            <h4 class="giveaway">
+            <div class="today"></div>
+          </h4>
+       </div>
+      
+        <div class="deadline">
+          <!-- days -->
+          <div class="deadline-format">
+            <div>
+              <h4 class="days">0</h4>
+              <span>days</span>
+            </div>
+          </div>
+          <!-- end of days -->
+          <!-- days -->
+          <div class="deadline-format">
+            <div>
+              <h4 class="hours">0</h4>
+              <span>hours</span>
+            </div>
+          </div>
+          <!-- end of days -->
+          <!-- minutes -->
+          <div class="deadline-format">
+            <div>
+              <h4 class="minutes">0</h4>
+              <span>mins</span>
+            </div>
+          </div>
+          <!-- end of days -->
+          <!-- minutes -->
+          <div class="deadline-format">
+            <div>
+              <h4 class="seconds">0</h4>
+              <span>seconds</span>
+            </div>
+          </div>
+          <!-- end of days -->
+        </div>
+          
+    </section>
+    <input type="date" name="date" id="date">
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <script>
+        let todayyy = document.querySelector('.today');
+        
+
+        document.addEventListener('DOMContentLoaded', function(){ 
+    // your code goes here
+ 
+            todayyy.innerHTML = new Date();
+          
+}, false);
+          
+        
+        
+
+    </script>
+  </body>
+</html>
